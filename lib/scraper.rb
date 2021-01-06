@@ -4,6 +4,7 @@ require 'open-uri'
 html = open("https://flatironschool.com/")
 doc = Nokogiri::HTML(html)
 
+<<<<<<< HEAD
 courses = doc.css("#id-3c239880-48cf-5ce7-84d0-578546d87586 .title-oE5vT4")
 puts "Current amount of elements in #courses: #{courses.size}
 
@@ -11,3 +12,6 @@ puts "Current amount of elements in #courses: #{courses.size}
  courses.each do |item|
    puts "* #{item.text.strip}"
  end
+=======
+puts doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
+>>>>>>> d24d885fef310e0635c19e90afa28c86adc13054
